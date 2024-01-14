@@ -56,7 +56,6 @@ int main()
      	system("cls");
      	printf("\nyou killed all the zombies.\n");
      	printf("\nCONGRATULATIONS!!!! YOU WON\n");
-		break;
 		 }
      system("cls");
      r1=i;
@@ -230,7 +229,12 @@ game:
 		       printf("\n\nWrong!!! The correct answer is B.Red");zombie--;
 		       getch();
 		       break;
-		       }}}
+		       }}
+      if(zombie == 0){
+     	system("cls");
+     	printf("\nyou killed all the zombies.\n");
+     	printf("\nCONGRATULATIONS!!!! YOU WON\n");
+		 }}
 			   if(zombie>0&&zombie<4)
 			   {
 			   	system("cls");
