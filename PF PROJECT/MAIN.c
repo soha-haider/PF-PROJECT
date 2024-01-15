@@ -5,7 +5,7 @@
 void help();
 int main()
      {
-     int r,r1,count,i;
+     int count,i;
      char choice;
      char playername[20];
      int zombie=3;
@@ -39,14 +39,13 @@ int main()
     printf("\n\n\n Press Y  to start the game!\n");
     printf("\n Press any other key to return to the main menu!");
     if (toupper(getch())=='Y')
-		{
-		    goto home;
+	{
+	   goto home;
         }
-	else
-		{
-        goto mainhome;
-       }
-
+    else
+        {
+          goto mainhome;
+        }
      home:
      system("cls");
      count=0;
@@ -58,11 +57,10 @@ int main()
      	printf("\nCONGRATULATIONS!!!! YOU WON\n");
 		 }
      system("cls");
-     r1=i;
-     switch(r1)
+     switch(i)
 		{
         case 1:
-        printf("\nYour health: %d | Zombie's health: %d\n",health, zombie);
+        printf("\nYOUR HEALTH: %d | ZOMBIE'S HEALTH: %d\n",health, zombie);
 		printf("\n\n\nThe country with highest environmental performance index is...");
 		printf("\n\nA.France\t\tB.Denmark\n\nC.Switzerland\t\tD.Finland");
 		if (toupper(getch())=='C')
@@ -74,9 +72,8 @@ int main()
 		       health--;
 		       getch();
 		       break;}
-
         case 2:
-        printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
+        printf("\nYOUR HEALTH: %d | ZOMBIE'S HEALTH: %d\n", health, zombie);
 		printf("\n\n\nWhich animal laughs like human being?");
 		printf("\n\nA.Polar Bear\t\tB.Hyena\n\nC.Donkey\t\tD.Chimpanzee");
 		if (toupper(getch())=='B')
@@ -88,9 +85,8 @@ int main()
 		       health--;
 		       getch();
 		       break;}
-
         case 3:
-        printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
+        printf("\nYOUR HEALTH: %d | ZOMBIE'S HEALTH: %d\n", health, zombie);
 		printf("\n\n\nWho was awarded the youngest player award in Fifa World Cup 2006?");
 		printf("\n\nA.Wayne Rooney\t\tB.Lucas Podolski\n\nC.Lionel Messi\t\tD.Cristiano Ronaldo");
 		if (toupper(getch())=='B')
@@ -102,9 +98,8 @@ int main()
 		       health--;
 		       getch();
 		       break;}
-
        case 4:
-       	printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
+       	printf("\nYOUR HEALTH: %d | ZOMBIE'S HEALTH: %d\n", health, zombie);
 		printf("\n\n\nStudy of Earthquake is called............,");
 		printf("\n\nA.Seismology\t\tB.Cosmology\n\nC.Orology\t\tD.Etimology");
 		if (toupper(getch())=='A')
@@ -115,9 +110,8 @@ int main()
 			   getch();
 		       break;
 		       }
-
         case 5:
-        printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
+        printf("\nYOUR HEALTH: %d | ZOMBIE'S HEALTH: %d\n", health, zombie);
 		printf("\n\n\nWhat is the group of frogs known as?");
 		printf("\n\nA.A traffic\t\tB.A toddler\n\nC.A police\t\tD.An Army");
 		if (toupper(getch())=='D' )
@@ -136,8 +130,8 @@ int main()
 	else
 	{
 	system("cls");
-	printf("\n\nSORRY YOU ARE NOT ELIGIBLE TO PLAY NEXT LEVEL, BETTER LUCK NEXT TIME\n\n");
-	printf("  _____  \n");
+    printf("\n\nSORRY YOU ARE NOT ELIGIBLE TO PLAY NEXT LEVEL, BETTER LUCK NEXT TIME\n\n");
+    printf("  _____  \n");
     printf(" /     \\ \n");
     printf("| () () |\n");
     printf("|   ?   |\n");
@@ -145,8 +139,6 @@ int main()
     Beep(500,300);
     Beep(300,400);
     exit(0);
-	getch();
-	goto mainhome;
 	}
      test:
      system("cls");
@@ -168,11 +160,10 @@ game:
 		break;
 		 }
      	system("cls");
-     r=i;
-     switch(r)
+     switch(i)
 		{
 		case 1:
-			printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
+		printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
 		printf("\n\nIn UK, what is the day after christmas known as?");
 		printf("\n\nA.Candlemas day\t\tB.Lunar new year\n\nC.Boxing day\t\tD.Europe day");
 		if (toupper(getch())=='C')
@@ -180,10 +171,9 @@ game:
 			 break;}
 		else
 		       {printf("\n\nWrong!!! The correct answer is C. Boxing day");health--;getch();
-		       
 		       break;}
 		case 2:
-			printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
+		printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
 		printf("\n\n\nWhich planet has the most gravity?");
 		printf("\n\nA.Jupiter\t\tB.Mercury\n\nC.Mars\t\tD.Neptune");
 		if (toupper(getch())=='A')
@@ -193,8 +183,7 @@ game:
 		       {printf("\n\nWrong!!! The correct answer is A.Jupiter");health--;getch();
 		       break;
 		       }
-
-        case 3:
+                case 3:
         	printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
 		printf("\n\n\nWhat Netflix show had the most streaming in 2021?");
 		printf("\n\nA.Manifest\t\tB.Ozark\n\nC.Squid Game\t\tD.Wednesday");
@@ -204,7 +193,6 @@ game:
 		else
 		       {printf("\n\nWrong!!! The correct answer is C.Squid Game");health--;getch();
 		       break;}
-
         case 4:
         	printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
 		printf("\n\n\nThe Laws of Electromagnetic Induction were given by?");
@@ -217,7 +205,6 @@ game:
                 printf("\n\nWrong!!! The correct answer is A.Faraday");health--;getch();		      
 		       break;
 		       }
-
         case 5:
         	printf("\nYour health: %d | Zombie's health: %d\n", health, zombie);
 		printf("\n\n\nWhat was the original color for all Ferrari model?");
@@ -235,19 +222,19 @@ game:
      	printf("\nyou killed all the zombies.\n");
      	printf("\nCONGRATULATIONS!!!! YOU WON\n");
 		 }}
-			   if(zombie>0&&zombie<4)
-			   {
-			   	system("cls");
-			   	printf("YOU FAILED TO KILL ALL ZOMBIES.\n");
-			   	printf("You have lost level-2\n");
-			   	 printf("  _____  \n");
+     if(zombie>0&&zombie<4)
+         {
+		 system("cls");
+	   	 printf("YOU FAILED TO KILL ALL ZOMBIES.\n");
+	   	 printf("You have lost level-2\n");
+	   	 printf("  _____  \n");
                  printf(" /     \\ \n");
                  printf("| () () |\n");
                  printf("|   ?   |\n");
                  printf(" \\  |  /\n");
                  Beep(500,300);
-   				 Beep(300,400);
-			   }exit(0);}
+   		 Beep(300,400);
+         }      exit(0);}
 			   
 void help()
 	{system("cls");
@@ -261,5 +248,5 @@ void help()
     printf("\n >> Right answers will kill a zombie for you.");
     printf("\n >> When you'll kill all the zombies, you move onto next level with more difficult questions.");
     printf("\n >> You will be given 4 options and you have to press A, B ,C or D for the right option.");
-	printf("\n\n\t*BEST OF LUCK*");
+    printf("\n\n\t*BEST OF LUCK*");
 	}
